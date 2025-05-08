@@ -3,14 +3,13 @@ package jm.task.core.jdbc;
 import jm.task.core.jdbc.service.UserService;
 import jm.task.core.jdbc.service.UserServiceImpl;
 
-import java.sql.SQLException;
 import java.util.Scanner;
 
 public class Main {
 
     private static boolean flag = true;
 
-    public static void main(String[] args) throws SQLException {
+    public static void main(String[] args) {
         // реализуйте алгоритм здесь
         UserService usersSer = new UserServiceImpl();
         Scanner sc = new Scanner(System.in);

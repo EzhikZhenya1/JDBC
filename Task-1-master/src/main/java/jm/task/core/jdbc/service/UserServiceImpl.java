@@ -10,19 +10,10 @@ import java.util.List;
 public class UserServiceImpl implements UserService {
 
     //Для JDBC
-    private static UserDaoJDBCImpl userDao = new UserDaoJDBCImpl();
-    //Для Hibernate
-    //UserDaoHibernateImpl userDao;
+    //private static UserDaoJDBCImpl userDao = new UserDaoJDBCImpl();
 
-    /* Для Hibernate
-    {
-        try {
-            userDao = new UserDaoHibernateImpl();
-        } catch (SQLException e) {
-            throw new RuntimeException(e);
-        }
-    }
-    */
+    //Для Hibernate
+    UserDaoHibernateImpl userDao = new UserDaoHibernateImpl();
 
     public void createUsersTable() {
         userDao.createUsersTable();
