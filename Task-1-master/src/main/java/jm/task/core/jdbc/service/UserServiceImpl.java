@@ -4,7 +4,6 @@ import jm.task.core.jdbc.dao.UserDaoHibernateImpl;
 import jm.task.core.jdbc.dao.UserDaoJDBCImpl;
 import jm.task.core.jdbc.model.User;
 
-import java.sql.SQLException;
 import java.util.List;
 
 public class UserServiceImpl implements UserService {
@@ -13,7 +12,7 @@ public class UserServiceImpl implements UserService {
     //private static UserDaoJDBCImpl userDao = new UserDaoJDBCImpl();
 
     //Для Hibernate
-    UserDaoHibernateImpl userDao = new UserDaoHibernateImpl();
+    private static UserDaoHibernateImpl userDao = new UserDaoHibernateImpl();
 
     public void createUsersTable() {
         userDao.createUsersTable();

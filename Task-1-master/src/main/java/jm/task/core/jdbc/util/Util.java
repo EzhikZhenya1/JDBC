@@ -17,7 +17,7 @@ public class Util {
     public static SessionFactory getSessionFactory() {
         if (sessionFactory == null) {
             try {
-                cfg.configure().addAnnotatedClass(User.class);
+                //cfg.configure().addAnnotatedClass(User.class);
                 StandardServiceRegistryBuilder ssrb = new StandardServiceRegistryBuilder()
                         .applySettings(cfg.getProperties());
                 sessionFactory = cfg.buildSessionFactory(ssrb.build());
