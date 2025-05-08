@@ -99,7 +99,7 @@ public class UserDaoHibernateImpl implements UserDao {
 
     @Override
     public List<User> getAllUsers() {
-        List<User> users = new ArrayList<>();
+        List<User> users;
         try (Session session = Util.getSessionFactory().openSession()) {
             Transaction transaction = null;
             try {
