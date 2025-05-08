@@ -38,7 +38,7 @@ public class Main {
                                 System.out.println("Press last name: ");
                                 String lastName = sc.next();
 
-                                byte age = 0;
+                                byte age;
                                 do {
                                     System.out.println("Press age: ");
                                     age = sc.nextByte();
